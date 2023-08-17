@@ -8,8 +8,8 @@
 </style>
 </head>
 <body>
-    <div class="welcome-container">
-        <img src="{{ asset('images/welcome.png') }}" alt="Logo Spotify">
-    </div>
+       
+    <h1>Aqui estoy!</h1>
 </body>
 </html>
+
