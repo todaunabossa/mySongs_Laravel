@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\FavoritesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/home', function () {
+    return view('Welcome');
 });
+
+Route::get('/favorites', function () {
+    return view('FavoritesList');
+});
+
+Route::get('/favorites', [FavoritesController::class, 'Favorites'])->name('favorites');
