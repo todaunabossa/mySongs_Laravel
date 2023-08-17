@@ -8,7 +8,17 @@
     </style>
 </head>
 <body>
-    <h1>LITE TEXT</h1>
+    <h1>Favorite Songs List</h1>
+    <div class="songs-list">
+        <ul>
+            @foreach ($songs as $song)
+                <li>{{ $song->id }}</li>
+                <li>{{ $song->title }}</li>
+                <li>{{ $song->album }}</li>
+                <li>{{ $song->year }}</li>
+            @endforeach
+        </ul>
+    </div>
 </body>
 </html>
 

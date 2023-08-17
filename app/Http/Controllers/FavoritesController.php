@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Songs;
+use App\Models\Songs;
 
 class FavoritesController extends Controller
 {
