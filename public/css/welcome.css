@@ -1,6 +1,8 @@
 
 body {
     background-color: black;
+    font-family: 'Changa One', sans-serif;
+    
 }
 .welcome-container {
     position: absolute;
@@ -18,4 +20,5 @@ body {
 h1{ 
     background-color: yellow;
     size: 800px;
+    
 }

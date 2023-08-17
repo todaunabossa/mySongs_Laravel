@@ -15,12 +15,5 @@ use App\Http\Controllers\FavoritesController;
 |
 */
 
-Route::get('/home', function () {
-    return view('Welcome');
-});
-
-Route::get('/favorites', function () {
-    return view('FavoritesList');
-});
-
-Route::get('/favorites', [FavoritesController::class, 'Favorites'])->name('favorites');
+Route::get('/home', [WelcomeController::class, 'index']);
+Route::get('/favorites', [FavoritesController::class, 'Favorites']);
