@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 </head>
 <body>
-    <div class="portada-container">
+    <div class="welcome-container">
         <img src="{{ asset('images/welcome.jpg') }}" alt="welcome">
     </div>
 </body>
