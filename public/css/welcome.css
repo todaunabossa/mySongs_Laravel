@@ -19,27 +19,16 @@ body {
     max-height: 100%;
 }
 
-.list-container {
-    border-radius: 50px;
+.table-rounded-top > thead > tr:first-child > th {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;   
+    background: linear-gradient(transparent, #4A3590);
 }
 
-p { 
-    background-color: #48348D;
-    border-radius: 15px 15px 0 0;
-    font-size: 105px;
-    margin: 15vh;
-    display: flex;
-    justify-content: center;
-    
-    
+.table-rounded-top > thead {
+    max-width: 400px;
 }
 
 .songs-list {
-    background-color: #121212;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    margin: 15vh;
-    
-
+    width: 90%;
 }
