@@ -10,7 +10,8 @@
 
 <body>
 
-    <h1>Favorite Songs List</h1>
+<div class="list-container">
+    <p>Songs you like</p>
     <div class="songs-list">
         <table>
             <thead>
@@ -19,7 +20,7 @@
                     <th>Title</th>
                     <th>Album</th>
                     <th>Year</th>
-                    <th>Created at</th>
+                    <th>Added in</th>
                     <th>Duration</th>
                 </tr>
             </thead>
@@ -30,12 +31,13 @@
                         <td>{{ $song->title }}</td>
                         <td>{{ $song->album }}</td>
                         <td>{{ $song->year }}</td>
-                        <td>{{ $song->created_at }}</td>
+                        <td>{{ $song->created_at->format('Y-m-d') }}</td>
                         <td>{{ $song->duration }}</td>
                     </tr>
                 @endforeach
             </tbody>
         </table>
+        </div>
     </div>
 </body>
 

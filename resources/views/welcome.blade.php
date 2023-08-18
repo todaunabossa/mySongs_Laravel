@@ -7,9 +7,9 @@
 
 <body>
     <div class="welcome-container">
-    
+    <a href="{{ route('favorites') }}"> 
         <img src="{{ asset('images/welcome.png') }}" alt="Logo Spotify">
-    
+    </a>
     </div>
 </body>
 </html>
