@@ -29,10 +29,11 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($songs as $song)
+                    @foreach ($collection as $song)
                         <tr>
                             <td>{{ $song->id }}</td>
                             <td>{{ $song->title }}</td>
+                            <td>{{ $song->artist }}</td>
                             <td>{{ $song->album }}</td>
                             <td>{{ $song->created_at->format('Y-m-d') }}</td>
                             <td>{{ $song->duration }}</td>

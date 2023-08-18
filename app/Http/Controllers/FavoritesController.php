@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Songs;
+use App\Models\Collection;
 
 class FavoritesController extends Controller
 {
     public function favorites()
     {   
-        $songs = Songs::all();
-        return view('Favorites', ['songs' => $songs]);
+        $collection = Collection::all();
+        return view('Favorites', ['collection' => $collection]);
     }
 }

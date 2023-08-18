@@ -12,23 +12,3 @@ body {
     top: 20vh;;
     background-color: black;
 }
-
-.welcome-container img {
-    background-position: center;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.table-rounded-top > thead > tr:first-child > th {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;   
-    background: linear-gradient(transparent, #4A3590);
-}
-
-.table-rounded-top > thead {
-    max-width: 400px;
-}
-
-.songs-list {
-    width: 90%;
-}
