@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('collection', function (Blueprint $table) {
+        Schema::create('collections', function (Blueprint $table) {
 
             $table->id()->unique();
-            $table->binary('photo');
+            $table->binary('photo')->nullable();
             $table->string('title');
             $table->string('artist');
             $table->string('album');
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('collection');
+        Schema::dropIfExists('collections');
     }
 };

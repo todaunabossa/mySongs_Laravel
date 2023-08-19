@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use App\Models\Collection;
+
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -15,11 +15,9 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        $gallery = new collection();
-        $gallery->title = "The Number of the Beast";
-        $gallery->artist = "Iron Maiden";
-        $gallery->album = "Powerslave";
-        $gallery->save();
+        //->llama a la hoja donde definiste lo que vas a ingresar a la tabla.//
+         $this->call(CollectionsSeeder::class); 
+      
 
     }
 }

@@ -11,14 +11,11 @@
 
 <body>
    
-    <div class="d-flex justify-content-center align-items-center vh-100">
-        <div class="songs-list">
-            <table class="table table-dark table-hover table-rounded-top">
+        <div>
+            <table>
                 <thead>
-                    <tr class="title-row">
-                        <th colspan="6" class="text-left">
-                            Songs you like
-                        </th>
+                    <tr>
+                        <th>Songs you like</th>
                     </tr>
                     <tr>
                         <th>ID</th>
@@ -29,20 +26,19 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($collection as $song)
+                    @foreach ($collection as $details)
                         <tr>
-                            <td>{{ $song->id }}</td>
-                            <td>{{ $song->title }}</td>
-                            <td>{{ $song->artist }}</td>
-                            <td>{{ $song->album }}</td>
-                            <td>{{ $song->created_at->format('Y-m-d') }}</td>
-                            <td>{{ $song->duration }}</td>
+                            <td>{{ $details->id }}</td>
+                            <td>{{ $details->title }}</td>
+                            <td>{{ $details->artist }}</td>
+                            <td>{{ $details->album }}</td>
+                            <td>{{ $details->created_at->format('Y-m-d') }}</td>
+                            <td>{{ $details->duration }}</td>
                         </tr>
                     @endforeach
                 </tbody>
             </table>
         </div>
-    </div>
 
 </body>
 

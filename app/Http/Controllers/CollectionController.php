@@ -3,13 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Collection;
+use App\Models\Collections;
 
 class CollectionController extends Controller
 {
     public function index()
     {
-        // Lógica para listar colecciones
+        $collection = Collections::all();
+        {return view('collection.favorites', ['collection' => $collection]);}
     }
 
     public function create()

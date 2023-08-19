@@ -1,19 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\WelcomeController;
-use App\Http\Controllers\FavoritesController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CollectionController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+Route::get('/home', [HomeController::class, 'Welcome']);
+// '' -> llama a la función no a la vista!//
 
-Route::get('/home', [WelcomeController::class, 'index']);
-Route::get('/favorites', [FavoritesController::class, 'Favorites'])->name('favorites');
+Route::get('/collection/favorites', [CollectionController::class, 'Index'])->name('Favorites');;
+
