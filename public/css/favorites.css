@@ -2,29 +2,49 @@
 body {
     
     font-family: 'Changa One', sans-serif;
-    
+    background-color: black;
+    color: #ddd;
+
 }
 
 
 .table-container {
-    width: 85%;
     text-align: center;
+    padding: 200px;
 }
 
 table {
-    border-collapse: collapse;
     width: 100%;
-    margin-top: 25vh;
-    padding: 20px;
+    margin-top: 2vh;
+
 }
 
 th, td {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    
 }
 
 .title-header {
     font-size: 50px; 
-    background-color: blueviolet;
+    background-color: #49348F;
+    
+    
+}
+
+th {
+    background: linear-gradient(to bottom, #49348F, #38155fe8);
+    background-color: rgba(141, 1, 255, 0.5);
+    backdrop-filter: blur(50px);
+}
+td {
+    background: linear-gradient(to bottom, #20173f, #000000e8);
+    backdrop-filter: blur(95px);
+}
+
+.div-table {
+    padding: 100px;
+    
+
 }
