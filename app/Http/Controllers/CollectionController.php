@@ -8,14 +8,13 @@ use App\Models\Collections;
 class CollectionController extends Controller
 {
     public function index()
-    {
-        $collection = Collections::all();
-        {return view('collection.favorites', ['collection' => $collection]);}
+    { $collection = Collections::all();
+      {return view('collection.favorites', ['collection' => $collection]);}
     }
-
+    
     public function create()
     {
-        // Lógica para mostrar el formulario de creación
+        {return view('collection.create');}
     }
 
     public function store(Request $request)

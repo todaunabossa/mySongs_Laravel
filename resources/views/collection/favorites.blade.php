@@ -6,7 +6,7 @@
     <style>
        @import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Cinzel:wght@400;700&family=Jolly+Lodger&family=Pangolin&family=Permanent+Marker&family=Roboto:wght@100&display=swap');
     </style>
-    <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/favorites.css') }}">
 </head>
 
 <body>
@@ -15,13 +15,13 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Songs you like</th>
+                        <th>Canciones que te gustan</th>
                     </tr>
                     <tr>
-                        <th>ID</th>
-                        <th>Title</th>
-                        <th>Album</th>
-                        <th>Added in</th>
+                        <th>#</th>
+                        <th>Título</th>
+                        <th>Álbum</th>
+                        <th>Fecha en la que se añadió</th>
                         <th>Duration</th>
                     </tr>
                 </thead>

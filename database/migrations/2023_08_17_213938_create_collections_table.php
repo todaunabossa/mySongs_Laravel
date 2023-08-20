@@ -12,14 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('collections', function (Blueprint $table) {
-
             $table->id()->unique();
             $table->binary('photo')->nullable();
             $table->string('title');
             $table->string('artist');
             $table->string('album');
+            $table->string('date');
             $table->timestamps();
             $table->time('duration')->nullable();
+            $table->string('sonido')->nullable();
         });
     }
 
