@@ -23,7 +23,7 @@ class CollectionsSeeder extends Seeder
         $collections->album = 'Running Free';
         $collections->date = now(); 
         $collections->duration = null;
-        $collections->sonido = 'https://open.spotify.com/intl-es/track/21wB3DaIk112Ry3mEzqfit'; // Cambia la URL por la ruta real del archivo de sonido
+        $collections->sonido = 'https://open.spotify.com/intl-es/track/21wB3DaIk112Ry3mEzqfit'; 
         $collections->save();
 
         $collections2 = new collections();
@@ -34,7 +34,7 @@ class CollectionsSeeder extends Seeder
         $collections2->album = "Killers";
         $collections2->date = now(); 
         $collections2->duration = null;
-        $collections2->sonido = 'https://open.spotify.com/intl-es/track/21wB3DaIk112Ry3mEzqfit'; // Cambia la URL por la ruta real del archivo de sonido
+        $collections2->sonido = 'https://open.spotify.com/intl-es/track/21wB3DaIk112Ry3mEzqfit'; 
         $collections2->save();
 
         $collections3 = new collections();
@@ -45,7 +45,7 @@ class CollectionsSeeder extends Seeder
         $collections3->album = "The Number of the Beast";
         $collections3->date = now(); 
         $collections3->duration = null;
-        $collections3->sonido = 'https://open.spotify.com/intl-es/track/21wB3DaIk112Ry3mEzqfit'; // Cambia la URL por la ruta real del archivo de sonido
+        $collections3->sonido = 'https://open.spotify.com/intl-es/track/21wB3DaIk112Ry3mEzqfit'; 
         $collections3->save();
 
 
@@ -57,7 +57,7 @@ class CollectionsSeeder extends Seeder
         $collections4->album = "Piece of Mind";
         $collections4->date = now(); 
         $collections4->duration = null;
-        $collections4->sonido = 'https://open.spotify.com/intl-es/track/21wB3DaIk112Ry3mEzqfit'; // Cambia la URL por la ruta real del archivo de sonido
+        $collections4->sonido = 'https://open.spotify.com/intl-es/track/21wB3DaIk112Ry3mEzqfit'; 
         $collections4->save();
 
 

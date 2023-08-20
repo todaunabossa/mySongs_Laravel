@@ -3,9 +3,28 @@ body {
     
     font-family: 'Changa One', sans-serif;
     
-    
 }
 
-table, tr {
-    font-size: 25px;
+
+.table-container {
+    width: 85%;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 25vh;
+    padding: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.title-header {
+    font-size: 50px; 
+    background-color: blueviolet;
 }

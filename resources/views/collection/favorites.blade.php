@@ -11,31 +11,32 @@
 
 <body>
    
-        <div>
+        <div class="div-table">
             <table>
                 <thead>
                     <tr>
-                        <th>Canciones que te gustan</th>
+                        <th class="title-header" colspan="6">Canciones que te gustan</th>
                     </tr>
                     <tr>
                         <th>#</th>
                         <th>Título</th>
                         <th>Álbum</th>
+                        <th>artista</th>
                         <th>Fecha en la que se añadió</th>
                         <th>Duration</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($collection as $details)
-                        <tr>
-                            <td>{{ $details->id }}</td>
-                            <td>{{ $details->title }}</td>
-                            <td>{{ $details->artist }}</td>
-                            <td>{{ $details->album }}</td>
-                            <td>{{ $details->created_at->format('Y-m-d') }}</td>
-                            <td>{{ $details->duration }}</td>
-                        </tr>
-                    @endforeach
+                @foreach ($collection as $details)
+                <tr>
+                    <td>{{ $details->id }}</td>
+                    <td>{{ $details->title }}</td>
+                    <td>{{ $details->album }}</td>
+                    <td>{{ $details->artist }}</td>
+                    <td>{{ \Carbon\Carbon::parse($details->date)->formatLocalized('%d de %B de %Y') }}</td>
+                    <td>{{ $details->duration }}</td>
+                </tr>
+                @endforeach
                 </tbody>
             </table>
         </div>
